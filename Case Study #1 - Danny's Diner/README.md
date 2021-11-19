@@ -7,7 +7,7 @@
 - [Business Case](#business-case)
 - [Entity Relationship Diagram](#entity-relationship-diagram)
 - [Case Study Questions](#case-study-questions)
-- [Solution on GitHub]
+- [Solution on GitHub](https://github.com/hydaai/8-Week-SQL-Challenge/blob/2245231af860087ae4833dba43da0af6481e36ae/Case%20Study%20%231%20-%20Danny's%20Diner/Solution.md)
 - [Solution on Medium]
     
 ***
