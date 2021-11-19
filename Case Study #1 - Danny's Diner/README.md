@@ -5,8 +5,10 @@
 
 ## 🧾 Table of Contents
 - [Business Case](#business-case)
-- [Entity Relationship Diagram](#Entity Relationship Diagram)
-- [Case Study Questions](#Case Study Questions)
+- [Entity Relationship Diagram](#entity-relationship-diagram)
+- [Case Study Questions](#case-study-questions)
+- [Solution on GitHub]
+- [Solution on Medium]
     
 ***
 
@@ -36,12 +38,14 @@ Danny wants to use the data to answer a few simple questions about his customers
 9. If each $1 spent equates to 10 points and sushi has a 2x points multiplier - how many points would each customer have?
 10. In the first week after a customer joins the program (including their join date) they earn 2x points on all items, not just sushi - how many points do customer A and B have at the end of January?
   
-## Bonus Questions 
+<details><summary>
+  Bonus Questions</summary>
   
 ### Join All The Things
 Recreate table with column: customer_id, order_date, product_name, price, member(Y/N).
   
 ### Rank All The Things
 Danny also requires further information about the ranking of customer products, but he purposely does not need the ranking for non-member purchases so he expects null ranking values for the records when customers are not yet part of the loyalty program.
-
+</details>
+  
 # <h1 align="center" style="margin-top: 0px;">👩‍💻👩‍💻👩‍💻
