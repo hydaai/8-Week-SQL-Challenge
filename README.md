@@ -22,7 +22,7 @@ To help the restaurant stay afloat - the restaurant has captured some very basic
 Danny wants to use the data to answer a few simple questions about his customers, especially about their visiting patterns, how much money they’ve spent and also which menu items are their favourite.
   "Whether he should expand the existing customer loyalty program?"
 
-Check out the full case study [here](https://8weeksqlchallenge.com/case-study-1/) and my **solution** on [GitHub] or [Medium].
+Check out the full case study [here](https://8weeksqlchallenge.com/case-study-1/) and my **solution** on [GitHub](https://github.com/hydaai/8-Week-SQL-Challenge/tree/main/Case%20Study%20%231%20-%20Danny's%20Diner) or [Medium].
 
 ***
 
