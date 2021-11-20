@@ -22,7 +22,7 @@ Danny wants to use the data to answer a few simple questions about his customers
     
 ## Entity Relationship Diagram
 <p align="center" style="margin-bottom: 0px !important;">
-  <img src="https://github.com/hydaai/8-Week-SQL-Challenge/blob/51763c4c7cbc7837ca9ac08360f9d756affa1389/images/Danny's%20Diner.png">
+  <img src="https://github.com/hydaai/8-Week-SQL-Challenge/blob/84d23cb6f924498911a600c92aa592541e7ed039/images/Danny's%20Diner.png">
     
 ***
   
