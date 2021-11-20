@@ -305,8 +305,11 @@ select
 	customer_id,
 	sum(points) points
 from (select s.customer_id, 
-		case when s.order_date between dateadd(day,-1,ms.join_date) and dateadd(day, 6, ms.join_date) then m.price*20
-			else price*10 end points
+		case when product_name = 'sushi' and
+				s.order_date between dateadd(day,-1,ms.join_date) and dateadd(day, 6, ms.join_date) then m.price*40
+			when product_name = 'sushi' or
+				s.order_date between dateadd(day,-1,ms.join_date) and dateadd(day, 6, ms.join_date) then m.price*20
+			else m.price*10 end points
 		from members ms
 		left join sales s on s.customer_id = ms.customer_id
 		left join menu m on s.product_id = m.product_id
@@ -318,11 +321,11 @@ group by customer_id;
 #### Answer:
 customer_id | points
 -- | --
-A | 1270
-B | 720
+A | 1370
+B | 1020
 
-- Customer A has 1270 points.
-- Customer B has 720 points.
+- Customer A has 1370 points.
+- Customer B has 1020 points.
 
 ***
 
