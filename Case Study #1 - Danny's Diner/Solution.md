@@ -197,7 +197,7 @@ B | sushi
 #### Steps:
 - Use **RANK** to find out the order based on `order_date` and `customer_id`
 - **JOIN** `sales`, `menu` and `members` tables because the required columns are in different tables
-- Use **WHERE** to filter days before became a `member` and first order.
+- Use **WHERE** to filter last order before became a `member`.
 
 ````sql
 select 
