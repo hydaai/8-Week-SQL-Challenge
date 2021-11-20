@@ -8,7 +8,7 @@
 - [Entity Relationship Diagram](#entity-relationship-diagram)
 - [Case Study Questions](#case-study-questions)
 - [Solution on GitHub](https://github.com/hydaai/8-Week-SQL-Challenge/blob/2245231af860087ae4833dba43da0af6481e36ae/Case%20Study%20%231%20-%20Danny's%20Diner/Solution.md)
-- [Solution on Medium]
+- [Solution on Medium](https://medium.com/@ai.z.hida/8-week-sql-challenge-1-dannys-diner-9a6e54e023ab)
     
 ***
 
