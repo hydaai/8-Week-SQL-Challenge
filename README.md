@@ -13,7 +13,7 @@ Thanks [DataWithDanny](https://github.com/DataWithDanny) for the excellent SQL c
 
 ## 🍜 Case Study #1 - Danny's Diner 
 <p align="center" style="margin-bottom: 0px !important;">
-  <img src="![1](https://user-images.githubusercontent.com/43850912/143439093-4e493e22-2453-488d-b064-19704f18229f.png)" width="270" height="270">
+  <img src="!(https://user-images.githubusercontent.com/43850912/143439093-4e493e22-2453-488d-b064-19704f18229f.png)" width="270" height="270">
 
 ### Business Case
 In early 2021 Danny opened a little restaurant (Danny's Diner) which sells 3 foods: sushi, curry and ramen.
