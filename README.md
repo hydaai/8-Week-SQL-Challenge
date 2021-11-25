@@ -13,7 +13,7 @@ Thanks [DataWithDanny](https://github.com/DataWithDanny) for the excellent SQL c
 
 ## 🍜 Case Study #1 - Danny's Diner 
 <p align="center" style="margin-bottom: 0px !important;">
-  <img src="(https://github.com/hydaai/8-Week-SQL-Challenge/blob/f10e5dcec32ec30d879e353deea527c473181271/images/1.png)" width="270" height="270">
+  <img src="https://github.com/hydaai/8-Week-SQL-Challenge/blob/f10e5dcec32ec30d879e353deea527c473181271/images/1.png" width="270" height="270">
 
 ### Business Case
 In early 2021 Danny opened a little restaurant (Danny's Diner) which sells 3 foods: sushi, curry and ramen.
