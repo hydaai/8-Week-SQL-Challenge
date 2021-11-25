@@ -1,7 +1,7 @@
 # <h1 align="center" style="margin-top: 0px;">🍜 Case Study #1 - Danny's Diner 🍜
 
 <p align="center" style="margin-bottom: 0px !important;">
-  <img src="https://github.com/hydaai/8-Week-SQL-Challenge/blob/f10e5dcec32ec30d879e353deea527c473181271/images/1.png" width="540" height="540">
+  <img src="https://user-images.githubusercontent.com/43850912/143439678-6e4474a8-abbe-4914-8f7d-fcfaa6371a2b.png" width="540" height="540">
 
 ## 🧾 Table of Contents
 - [Business Case](#business-case)
@@ -22,7 +22,7 @@ Danny wants to use the data to answer a few simple questions about his customers
     
 ## Entity Relationship Diagram
 <p align="center" style="margin-bottom: 0px !important;">
-  <img src="https://github.com/hydaai/8-Week-SQL-Challenge/blob/84d23cb6f924498911a600c92aa592541e7ed039/images/Danny's%20Diner.png">
+  <img src="https://user-images.githubusercontent.com/43850912/143439961-d2a99289-bd1d-4a52-b095-6c1feb4ad9b2.png">
     
 ***
   
