@@ -1,30 +1,37 @@
 /* ----- perprocessing customer_orders table -----*/
--- split row in exclusions and extras columns
-DROP TABLE IF EXISTS #customer_orders;
-select order_id, customer_id, pizza_id, value exclusions, extras, order_time
+DROP TABLE IF EXISTS #customer_orders, #customer_orders_split;
+-- change null values into ''(blank space)
+select order_id, customer_id, pizza_id, 
+		case when exclusions is null or exclusions = 'null' then ''
+			else trim(exclusions) end exclusions, 
+		case when extras is null or extras = 'null' then ''
+			else trim(extras) end extras, 
+		order_time
 into #customer_orders
-FROM (SELECT order_id, customer_id, pizza_id, exclusions, value extras, order_time 
--- change null values into ' '(blank space)
-		FROM (select order_id, customer_id, pizza_id, 
-					case when exclusions is null or exclusions = 'null' or exclusions = '' then ' '
-						else trim(exclusions) end exclusions, 
-					case when extras is null or extras = 'null' or extras = '' then ' '
-						else trim(extras) end extras, 
-					order_time
-				from customer_orders) a
-		CROSS APPLY STRING_SPLIT(extras, ',')) b
-CROSS APPLY STRING_SPLIT(exclusions, ',')
+from customer_orders;
+-- split row in exclusions and extras columns
+WITH customer_orders_CTE (order_id, customer_id, pizza_id, exclusions, extras, order_time)  
+AS  
+(
+    SELECT order_id, customer_id, pizza_id, trim(value) exclusions, extras, order_time 
+    FROM #customer_orders 
+    CROSS APPLY STRING_SPLIT(exclusions, ',')  
+)  
+SELECT order_id, customer_id, pizza_id, exclusions,trim(value) extras, order_time  
+into #customer_orders_split
+FROM customer_orders_CTE
+CROSS APPLY STRING_SPLIT(extras, ',')
 order by order_id, customer_id, pizza_id, exclusions, extras;
 
 /* ----- perprocessing runner_orders table -----*/
-DROP TABLE IF EXISTS #runner_orders;
+DROP TABLE IF EXISTS #runner_orders, #runner_orders_change;
 select order_id, runner_id, 
-	case when pickup_time is null or pickup_time = 'null' or pickup_time = '' then ' '
+	case when pickup_time is null or pickup_time = 'null' then ''
 		else pickup_time end pickup_time,
-	case when distance is null or distance = 'null' or distance = '' then ' '
+	case when distance is null or distance = 'null' then ''
 		when distance like '%km' then trim('km' from distance)
 		else distance end distance,
-	case when duration is null or duration = 'null' or duration = '' then ' '
+	case when duration is null or duration = 'null' then ''
 		when duration like '%mins' then trim('mins' from duration)
 		when duration like '%minute' then trim('minute' from duration)
 		when duration like '%minutes' then trim('minutes' from duration)
@@ -34,12 +41,14 @@ select order_id, runner_id,
 into #runner_orders
 from runner_orders;
 -- change data type 
-alter table #runner_orders
+select * into #runner_orders_change from #runner_orders;
+alter table #runner_orders_change
 	alter column pickup_time datetime;
-alter table #runner_orders
+alter table #runner_orders_change
 	alter column distance float;
-alter table #runner_orders
+alter table #runner_orders_change
 	alter column duration int;
+select * from #runner_orders_change
 
 /* ----- perprocessing pizza_names table -----*/
 -- change data type
