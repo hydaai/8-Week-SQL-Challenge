@@ -22,6 +22,10 @@ into #customer_orders_split
 FROM customer_orders_CTE
 CROSS APPLY STRING_SPLIT(extras, ',')
 order by order_id, customer_id, pizza_id, exclusions, extras;
+alter table #customer_orders_split
+	alter column exclusions int;
+alter table #customer_orders_split
+	alter column extras int;
 
 /* ----- perprocessing runner_orders table -----*/
 DROP TABLE IF EXISTS #runner_orders, #runner_orders_change;
