@@ -48,7 +48,6 @@ alter table #runner_orders_change
 	alter column distance float;
 alter table #runner_orders_change
 	alter column duration int;
-select * from #runner_orders_change
 
 /* ----- perprocessing pizza_names table -----*/
 -- change data type
