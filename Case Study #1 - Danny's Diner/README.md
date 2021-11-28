@@ -1,4 +1,4 @@
-# <h1 align="center" style="margin-top: 0px;">🍜 Case Study #1 - Danny's Diner 🍜
+# <p align="center" style="margin-top: 0px;">🍜 Case Study #1 - Danny's Diner 🍜
 
 <p align="center" style="margin-bottom: 0px !important;">
   <img src="https://user-images.githubusercontent.com/43850912/143439678-6e4474a8-abbe-4914-8f7d-fcfaa6371a2b.png" width="540" height="540">
@@ -52,4 +52,4 @@ Recreate table with column: customer_id, order_date, product_name, price, member
 Danny also requires further information about the ranking of customer products, but he purposely does not need the ranking for non-member purchases so he expects null ranking values for the records when customers are not yet part of the loyalty program.
 </details>
   
-# <h1 align="center" style="margin-top: 0px;">👩‍💻👩‍💻👩‍💻
+# <p align="center" style="margin-top: 0px;">👩‍💻👩‍💻👩‍💻
