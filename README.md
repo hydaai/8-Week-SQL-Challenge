@@ -1,4 +1,4 @@
-# <h1 align="center" style="margin-top: 0px;">💥 8 Week SQL Challenge 💥
+# <p align="center" style="margin-top: 0px;">💥 8 Week SQL Challenge 💥
 
 This repository contains the solution for case studies in **[8 Week SQL Challenge](https://8weeksqlchallenge.com)**!
 
@@ -26,5 +26,5 @@ Check out the full case study [here](https://8weeksqlchallenge.com/case-study-1/
 
 ***
 
-<h1 align="center" style="margin-top: 0px;">Thank you
+#<p align="center" style="margin-top: 0px;">Thank you
 
