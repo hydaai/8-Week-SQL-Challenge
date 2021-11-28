@@ -92,11 +92,11 @@ topping_id | topping_name | removed
 
 ***
 
-## 4. *Generate an order item for each record in the customers_orders table in the format of one of the following: 
+## 4. *Generate an order item for each record in the customers_orders table in the format of one of the following:*
 	- Meat Lovers. 
 	- Meat Lovers - Exclude Beef. 
 	- Meat Lovers - Extra Bacon. 
-	- Meat Lovers - Exclude Cheese, Bacon - Extra Mushroom, Peppers *
+	- Meat Lovers - Exclude Cheese, Bacon - Extra Mushroom, Peppers 
 
 ```sql
 select 
@@ -168,8 +168,8 @@ order_id | customer_id | pizza_id | exclusions | extras | order_time | order_ite
 
 ***
 
-## 5. *Generate an alphabetically ordered comma separated ingredient list for each pizza order from the customer_orders table and add a 2x in front of any relevant ingredients.
-	For example: "Meat Lovers: 2xBacon, Beef, ... , Salami"*
+## 5. *Generate an alphabetically ordered comma separated ingredient list for each pizza order from the customer_orders table and add a 2x in front of any relevant ingredients.*
+	For example: "Meat Lovers: 2xBacon, Beef, ... , Salami"
 
 ```sql
 SELECT
@@ -277,8 +277,8 @@ order_id | customer_id | pizza_id | exclusions | extras | order_time | ingredien
 SELECT
 	topping_id, topping_name,
 	COUNT(topping_id) counts
-						FROM 
-						(
+FROM 
+	(
 SELECT 
 	b.*, t.topping_name
 FROM
