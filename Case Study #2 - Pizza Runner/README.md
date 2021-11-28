@@ -7,11 +7,13 @@
 - [Business Case](#business-case)
 - [Entity Relationship Diagram](#entity-relationship-diagram)
 - [Case Study Questions](#case-study-questions)
-- [Solution A. Pizza Metrics](https://github.com/hydaai/8-Week-SQL-Challenge/blob/36b95196f8f57c8ec4705a6084084058bfdc1941/Case%20Study%20%232%20-%20Pizza%20Runner/A.%20Pizza%20Metrics.md)
-- [Solution B. Runner and Customer Experience](https://github.com/hydaai/8-Week-SQL-Challenge/blob/36b95196f8f57c8ec4705a6084084058bfdc1941/Case%20Study%20%232%20-%20Pizza%20Runner/B.%20Runner%20and%20Customer%20Experience.md)
-- [Solution C. Ingredient Optimisation](https://github.com/hydaai/8-Week-SQL-Challenge/blob/36b95196f8f57c8ec4705a6084084058bfdc1941/Case%20Study%20%232%20-%20Pizza%20Runner/C.%20Ingredient%20Optimisation.md)
-- [Solution D. Pricing and Ratings](https://github.com/hydaai/8-Week-SQL-Challenge/blob/36b95196f8f57c8ec4705a6084084058bfdc1941/Case%20Study%20%232%20-%20Pizza%20Runner/D.%20Pricing%20and%20Ratings.md)
-- [Solution on Medium]
+- Solution 
+  - GitHub
+    - [A. Pizza Metrics](https://github.com/hydaai/8-Week-SQL-Challenge/blob/36b95196f8f57c8ec4705a6084084058bfdc1941/Case%20Study%20%232%20-%20Pizza%20Runner/A.%20Pizza%20Metrics.md)
+    - [B. Runner and Customer Experience](https://github.com/hydaai/8-Week-SQL-Challenge/blob/36b95196f8f57c8ec4705a6084084058bfdc1941/Case%20Study%20%232%20-%20Pizza%20Runner/B.%20Runner%20and%20Customer%20Experience.md)
+    - [C. Ingredient Optimisation](https://github.com/hydaai/8-Week-SQL-Challenge/blob/36b95196f8f57c8ec4705a6084084058bfdc1941/Case%20Study%20%232%20-%20Pizza%20Runner/C.%20Ingredient%20Optimisation.md)
+    - [D. Pricing and Ratings](https://github.com/hydaai/8-Week-SQL-Challenge/blob/36b95196f8f57c8ec4705a6084084058bfdc1941/Case%20Study%20%232%20-%20Pizza%20Runner/D.%20Pricing%20and%20Ratings.md)
+  - [Medium]
     
 ***
 
