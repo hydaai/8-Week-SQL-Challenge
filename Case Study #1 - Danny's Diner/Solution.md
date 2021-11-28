@@ -1,4 +1,4 @@
-# <h1 align="center" style="margin-top: 0px;">🍜 Case Study #1 - Danny's Diner 🍜
+# <p align="center" style="margin-top: 0px;">🍜 Case Study #1 - Danny's Diner 🍜
 
 ## Solution
 
@@ -411,4 +411,4 @@ C | 2021-01-07 | ramen | 12 | N	| NULL
 	
 ***
 
-# <h1 align="center" style="margin-top: 0px;">👩‍💻👩‍💻👩‍💻
+# <p align="center" style="margin-top: 0px;">👩‍💻👩‍💻👩‍💻
