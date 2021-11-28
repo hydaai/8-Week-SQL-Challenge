@@ -58,8 +58,8 @@ from
 				else CONCAT('- Exclude', ' ', tc1, ', ', tc2)
 				end exc,
 			case when tx1 is null then ''
-				when tx2 is null then CONCAT('- Exclude', ' ', tx1)
-				else CONCAT('- Exclude', ' ', tx1, ', ', tx2)
+				when tx2 is null then CONCAT('- Extra', ' ', tx1)
+				else CONCAT('- Extra', ' ', tx1, ', ', tx2)
 				end ext
 		from
 			(
