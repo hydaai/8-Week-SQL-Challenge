@@ -196,10 +196,8 @@ runner_id | percentage
 3 | 50
 
 - Runner 1 delivery percentage is 100%.
-- The average distance traveled for Customer 102 is 18.4 km.
-- The average distance traveled for Customer 103 is 23.4 km.
-- The average distance traveled for Customer 104 is 10 km.
-- The average distance traveled for Customer 105 is 25 km.
+- Runner 2 delivery percentage is 75%.
+- Runner 3 delivery percentage is 50%.
 
 ***
 
