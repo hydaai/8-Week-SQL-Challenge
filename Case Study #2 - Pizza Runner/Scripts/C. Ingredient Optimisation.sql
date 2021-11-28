@@ -37,9 +37,9 @@ left join
 		from #customer_orders_split
 	)c on t.topping_id = c.exclusions
 group by t.topping_id, t.topping_name
-having COUNT(c.exclusions) <> 0;
+having COUNT(c.exclusions) <> 0
+order by t.topping_id;
 
-select 'generate order item' as title
 /* 4. Generate an order item for each record in the customers_orders table in the format of one of the following: 
 	* Meat Lovers. 
 	* Meat Lovers - Exclude Beef. 
@@ -91,7 +91,6 @@ from
 			)b
 	)c;
 
-select 'ingredient list' as title
 /* 5. Generate an alphabetically ordered comma separated ingredient list for each pizza order from the customer_orders table and add a 2x in front of any relevant ingredients.
 	For example: "Meat Lovers: 2xBacon, Beef, ... , Salami" */
 SELECT
@@ -170,7 +169,6 @@ left join #pizza_toppings t on b.topping_id = t.topping_id
 left join #customer_orders_no cn on cn.no = f.no
 ORDER BY f.no, f.order_id, f.pizza_id;
 
-select 'total quantity of each ingredient' as title
 /* 6. What is the total quantity of each ingredient used in all delivered pizzas sorted by most frequent first? */
 SELECT
 	topping_id, topping_name,
