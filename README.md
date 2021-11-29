@@ -1,6 +1,6 @@
 # <p align="center" style="margin-top: 0px;">💥 8 Week SQL Challenge 💥
 
-This repository contains the solution for case studies in **[8 Week SQL Challenge](https://8weeksqlchallenge.com)**!
+This repository contains the solution for case studies in **[8WeekSQLChallenge](https://8weeksqlchallenge.com)**!
 
 Thanks [DataWithDanny](https://github.com/DataWithDanny) for the excellent SQL case studies! 😊 
   
