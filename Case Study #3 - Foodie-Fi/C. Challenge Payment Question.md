@@ -13,6 +13,19 @@ View the complete syntax [*here*](https://github.com/hydaai/8-Week-SQL-Challenge
  * upgrades from pro monthly to pro annual are paid at the end of the current billing period and also starts at the end of the month period
  * once a customer churns they will no longer make payments
 
+#### Steps:
+- Create a base table with columns:
+	- customer_id,
+	- plan_id,
+	- plan_name,
+	- start_date, 
+	- price as amount, 
+	- start_date as payment_date,
+	- LEAD(start_date) as next_date
+- Filter table with deselect **trial** and **churn**, with note `next_date` which is NULL and more than 31-12-2021 changed to 31-12-2021.
+- Use **recursive** for `payment_date`, provided that recursive doesn't apply to *plan_id* = 3.
+- Use **RANK** for `payment_order`.
+
 ````sql
 WITH
 	join_table --create base table
