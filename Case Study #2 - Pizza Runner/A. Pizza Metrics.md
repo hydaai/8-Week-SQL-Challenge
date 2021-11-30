@@ -146,7 +146,7 @@ from
   
 - Maximum 3 pizzas delivered in a single order.
 
-*** 7. *For each customer, how many delivered pizzas had at least 1 change and how many had no changes?*
+### 7. *For each customer, how many delivered pizzas had at least 1 change and how many had no changes?*
 
 ```sql
 select 
