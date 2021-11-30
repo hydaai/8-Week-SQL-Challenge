@@ -114,7 +114,7 @@ WITH
 		select *, 
 			LEAD(start_date, 1) OVER(PARTITION BY customer_id ORDER BY start_date, plan_id) next_date
 		from subscriptions
-		where start_date < '20201231'
+		where start_date <= '20201231'
 	), 
 	breakdown --breakdown plan
 		AS
