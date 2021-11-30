@@ -209,8 +209,8 @@ WITH
 		from diff
 	)
 select
-	CONCAT((bucket * 30) + 1, ' - ', (bucket + 1) * 30, ' days ') breakdown,
-	COUNT(days) days
+	CONCAT((bucket * 30) + 1, ' - ', (bucket + 1) * 30, ' days ') days,
+	COUNT(days) total
 from bucket
 group by bucket;
 
