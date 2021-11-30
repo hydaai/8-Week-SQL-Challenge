@@ -42,4 +42,22 @@ Danny started by recruiting “runners” to deliver fresh pizza from Pizza Runn
 Check out the full case study [here](https://8weeksqlchallenge.com/case-study-2/) and my **solution** on [GitHub](https://github.com/hydaai/8-Week-SQL-Challenge/tree/main/Case%20Study%20%232%20-%20Pizza%20Runner) or [Medium].
 
 ***
+
+## 🥑 Case Study #3 - Foodie-Fi 
+ <p align="center" style="margin-bottom: 0px !important;">
+  <img src="https://user-images.githubusercontent.com/43850912/143991760-d160dbfd-14c3-40c8-8c1a-823716f6ef8e.png" width="270" height="270">
+
+### Business Case
+  
+Danny launch his new startup Foodie-Fi in 2020 and started selling monthly and annual subscriptions, 
+	giving their customers unlimited on-demand access to exclusive food videos from around the world!
+
+Danny created Foodie-Fi with a data driven mindset and wanted to ensure all future investment decisions and new features were decided using data. 
+	**Using subscription style digital data to answer important business questions.**
+
+Check out the full case study [here](https://8weeksqlchallenge.com/case-study-3/) and my **solution** on [GitHub](https://github.com/hydaai/8-Week-SQL-Challenge/tree/main/Case%20Study%20%233%20-%20Foodie-Fi) or [Medium].
+
+
+***
+  
 # <p align="center" style="margin-top: 0px;"> 😊 Thank you 😊
