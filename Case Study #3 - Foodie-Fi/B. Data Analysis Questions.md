@@ -82,6 +82,7 @@ monthly_part | monthly_name | total_distribution
 - Extract year  from `start_date` can use **DATEPART  or **YEAR**
 - Use **COUNT** and **GROUP BY** to find the `event count` for each `plan_name`
 - Fetch data for 2020 and 2021 separately.
+	
 ***NOTE*** : *2020 data, shown for comparison with 2021 data (year-on-year).*
 
 ````sql
