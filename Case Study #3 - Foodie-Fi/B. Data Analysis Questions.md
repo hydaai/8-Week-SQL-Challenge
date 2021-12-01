@@ -1,5 +1,5 @@
 # <p align="center" style="margin-top: 0px;">🥑 Case Study #3 - Foodie-Fi 🥑
-## <p align="center"> C. Challenge Payment Question
+## <p align="center"> B. Data Analysis Question
 
 ## Solution
 
