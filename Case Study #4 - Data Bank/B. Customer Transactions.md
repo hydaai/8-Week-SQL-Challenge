@@ -206,7 +206,7 @@ ORDER BY customer_id, month_id;
 
 
 #### Answer:
-
+***NOTE*** : *Not all output is displayed, considering the number of results and will take up space*	
 customer_id | month_id | month_name | closing_balance
 -- | -- | -- | --
 1 | 1 | January | 312
