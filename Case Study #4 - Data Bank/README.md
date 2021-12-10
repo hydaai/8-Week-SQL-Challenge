@@ -10,7 +10,8 @@
 - [Case Study Questions](#case-study-questions)
 - Solution 
   - GitHub
-    
+    - [A. Customer Nodes Exploration](https://github.com/hydaai/8-Week-SQL-Challenge/blob/83f5ea092b0e305cc61ec4843f0d9559d78c27b0/Case%20Study%20%234%20-%20Data%20Bank/A.%20Customer%20Nodes%20Exploration.md)
+    - [B. Customer Transactions.md](https://github.com/hydaai/8-Week-SQL-Challenge/blob/74679d15086153e06f6a2246034119d5172e56bf/Case%20Study%20%234%20-%20Data%20Bank/B.%20Customer%20Transactions.md)
   - [Medium]
     
 ***
@@ -142,5 +143,7 @@ The Data Bank team wants you to use the outputs generated from the above section
 2. With the transaction analysis - prepare a 1 page presentation slide which contains all the relevant information 
   about the various options for the data provisioning so the Data Bank management team can make an informed decision.
 </details></details>
+
+***
 
 # <p align="center" style="margin-top: 0px;">👩‍💻👩‍💻👩‍💻
