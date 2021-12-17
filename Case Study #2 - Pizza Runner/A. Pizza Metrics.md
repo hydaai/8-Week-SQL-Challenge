@@ -86,8 +86,8 @@ pizza_name | delivered
 Meatlovers | 9
 Vegetarian | 3
   
-- 9 Vegetarian pizzas have been delivered.
-- 3 Meat Lovers pizzas have been delivered.
+- 9 Meat Lovers pizzas have been delivered.
+- 3 Vegetarian pizzas have been delivered.
 
 ***
 
