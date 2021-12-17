@@ -171,7 +171,7 @@ order_id | runner_id | number_of_pizzas | distance | duration | speed
 10 | 1 | 2 | 10 | 10 | 60
 
 - The average speed for runner 1 between 37.5 km/h to 60 km/h.
-- The average speed for runner 1 between 35.1 km/h to 93.6 km/h.
+- The average speed for runner 2 between 35.1 km/h to 93.6 km/h.
 - The average speed for runner 3 is 40 km/h.
 
 ***
