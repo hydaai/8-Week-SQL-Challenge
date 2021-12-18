@@ -1,7 +1,9 @@
 /* ----- perprocessing customer_orders table -----*/
-DROP TABLE IF EXISTS #customer_orders, #customer_orders_no, #customer_orders_split;
+DROP TABLE IF EXISTS #customer_orders, #customer_orders_split;
 -- change null values into ''(blank space)
+-- add number columns each order & pizza
 select 
+	ROW_NUMBER() OVER(order by order_id, pizza_id) no,
 	order_id, customer_id, pizza_id, 
 	case when exclusions is null or exclusions = 'null' then ''
 		else trim(exclusions) end exclusions, 
@@ -10,11 +12,6 @@ select
 	order_time
 into #customer_orders
 from customer_orders;
--- add number columns each order & pizza
-SELECT 
-	ROW_NUMBER() OVER(order by order_id, pizza_id) no, * 
-INTO #customer_orders_no
-FROM #customer_orders;
 -- split row in exclusions and extras columns
 WITH customer_orders_CTE (no, order_id, customer_id, pizza_id, exclusions, extras, order_time)  
 AS  
@@ -22,7 +19,7 @@ AS
     SELECT 
 		no, order_id, customer_id, pizza_id, 
 		trim(value) exclusions, extras, order_time 
-    FROM #customer_orders_no 
+    FROM #customer_orders 
     CROSS APPLY STRING_SPLIT(exclusions, ',')  
 )  
 SELECT 
