@@ -79,7 +79,7 @@ monthly_part | monthly_name | total_distribution
 ## 3. *What plan start_date values occur after the year 2020 for our dataset? Show the breakdown by count of events for each plan_name*
 
 #### Steps:
-- Extract year  from `start_date` can use **DATEPART  or **YEAR**
+- Extract year  from `start_date` can use **DATEPART** or **YEAR**
 - Use **COUNT** and **GROUP BY** to find the `event count` for each `plan_name`
 - Fetch data for 2020 and 2021 separately.
 	
