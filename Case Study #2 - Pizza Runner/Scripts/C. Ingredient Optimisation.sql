@@ -125,7 +125,7 @@ FROM
 	FROM
 	(	-- orders ingredient recipes
 		select c.no, c.order_id, c.customer_id, n.*, t.*
-		from #customer_orders_no c
+		from #customer_orders c
 		left join #pizza_names n on c.pizza_id = n.pizza_id
 		left join #pizza_recipes r on c.pizza_id = r.pizza_id
 		left join #pizza_toppings t on r.toppings = t.topping_id
@@ -138,7 +138,7 @@ SELECT
 		SELECT 
 			c.no, c.order_id, c.customer_id, c.pizza_id, 
 			n.pizza_name, cast(trim(value) as int) exclusions
-		FROM #customer_orders_no c
+		FROM #customer_orders c
 		left join #pizza_names n on c.pizza_id = n.pizza_id
 		CROSS APPLY STRING_SPLIT(c.exclusions, ',')
 	)exclusions_orders
@@ -150,7 +150,7 @@ FROM
 		SELECT 
 			c.no, c.order_id, c.customer_id, c.pizza_id, 
 			n.pizza_name, cast(trim(value) as int) extras
-		FROM #customer_orders_no c
+		FROM #customer_orders c
 		left join #pizza_names n on c.pizza_id = n.pizza_id
 		CROSS APPLY STRING_SPLIT(c.extras, ',')
 		where cast(trim(value) as int) != 0
@@ -166,7 +166,7 @@ left join #pizza_toppings t on b.topping_id = t.topping_id
 		GROUP BY
 			no, order_id, pizza_id, pizza_name
 	)f
-left join #customer_orders_no cn on cn.no = f.no
+left join #customer_orders cn on cn.no = f.no
 ORDER BY f.no, f.order_id, f.pizza_id;
 
 /* 6. What is the total quantity of each ingredient used in all delivered pizzas sorted by most frequent first? */
@@ -187,7 +187,7 @@ FROM
 		select 
 			c.no, c.order_id, 
 			c.customer_id, n.*, t.*
-		from #customer_orders_no c
+		from #customer_orders c
 		left join #pizza_names n on c.pizza_id = n.pizza_id
 		left join #pizza_recipes r on c.pizza_id = r.pizza_id
 		left join #pizza_toppings t on r.toppings = t.topping_id
@@ -200,7 +200,7 @@ SELECT
 		SELECT 
 			c.no, c.order_id, c.customer_id, c.pizza_id, 
 			n.pizza_name, cast(trim(value) as int) exclusions
-		FROM #customer_orders_no c
+		FROM #customer_orders c
 		left join #pizza_names n on c.pizza_id = n.pizza_id
 		CROSS APPLY STRING_SPLIT(c.exclusions, ',')
 	)exclusions_orders
@@ -212,7 +212,7 @@ FROM
 		SELECT 
 			c.no, c.order_id, c.customer_id, c.pizza_id, 
 			n.pizza_name, cast(trim(value) as int) extras
-		FROM #customer_orders_no c
+		FROM #customer_orders c
 		left join #pizza_names n on c.pizza_id = n.pizza_id
 		CROSS APPLY STRING_SPLIT(c.extras, ',')
 		where cast(trim(value) as int) != 0
