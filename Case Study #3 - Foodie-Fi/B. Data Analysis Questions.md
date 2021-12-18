@@ -381,7 +381,7 @@ left join annual a on t.customer_id = a.customer_id;
 - Assuming join date same as trial start date, fetch data for trial and annual plan separately
 - Use **DATEDIFF** to extract days from the difference between trial and annual `start date`
 - Use **AVG** to find the `average` length of days it takes to buy an annual plan
-- Use **FLOOR ** to return the largest integer that is less than or equal to the specified numeric expression
+- Use **FLOOR** to return the largest integer that is less than or equal to the specified numeric expression
 - Use **CONCAT** returns a string resulting from the concatenation.
 
 ````sql
