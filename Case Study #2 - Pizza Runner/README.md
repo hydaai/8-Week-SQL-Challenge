@@ -14,7 +14,7 @@
     - [B. Runner and Customer Experience](https://github.com/hydaai/8-Week-SQL-Challenge/blob/36b95196f8f57c8ec4705a6084084058bfdc1941/Case%20Study%20%232%20-%20Pizza%20Runner/B.%20Runner%20and%20Customer%20Experience.md)
     - [C. Ingredient Optimisation](https://github.com/hydaai/8-Week-SQL-Challenge/blob/36b95196f8f57c8ec4705a6084084058bfdc1941/Case%20Study%20%232%20-%20Pizza%20Runner/C.%20Ingredient%20Optimisation.md)
     - [D. Pricing and Ratings](https://github.com/hydaai/8-Week-SQL-Challenge/blob/36b95196f8f57c8ec4705a6084084058bfdc1941/Case%20Study%20%232%20-%20Pizza%20Runner/D.%20Pricing%20and%20Ratings.md)
-  - [Medium]
+  - [Medium](https://medium.com/@ai.z.hida/8-week-sql-challenge-2-pizza-runner-f0e0c7f5e918)
     
 ***
 
