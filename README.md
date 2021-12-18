@@ -42,7 +42,7 @@ Danny was sold on the idea **“80s Retro Styling and Pizza Is The Future!”**,
 Danny started by recruiting “runners” to deliver fresh pizza from Pizza Runner Headquarters (otherwise known as Danny’s house) 
   and also maxed out his credit card to pay freelance developers to build a mobile app to accept orders from customers.
 
-Check out the full case study [here](https://8weeksqlchallenge.com/case-study-2/) and my **solution** on [GitHub](https://github.com/hydaai/8-Week-SQL-Challenge/tree/main/Case%20Study%20%232%20-%20Pizza%20Runner) or [Medium].
+Check out the full case study [here](https://8weeksqlchallenge.com/case-study-2/) and my **solution** on [GitHub](https://github.com/hydaai/8-Week-SQL-Challenge/tree/main/Case%20Study%20%232%20-%20Pizza%20Runner) or [Medium](https://medium.com/@ai.z.hida/8-week-sql-challenge-2-pizza-runner-f0e0c7f5e918).
 
 ***
 
