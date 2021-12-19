@@ -7,7 +7,8 @@ from customer_nodes;
 select 
 	n.region_id,
 	r.region_name,
-	count(distinct n.node_id) nodes
+	count(distinct n.node_id) unique_nodes,
+	count(n.node_id) number_of_nodes
 from customer_nodes n 
 left join regions r on n.region_id = r.region_id
 group by n.region_id, r.region_name
