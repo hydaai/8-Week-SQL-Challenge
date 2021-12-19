@@ -37,7 +37,8 @@ from customer_nodes;
 select 
 	n.region_id,
 	r.region_name,
-	count(distinct n.node_id) nodes
+	count(distinct n.node_id) unique_nodes,
+	count(n.node_id) number_of_nodes
 from customer_nodes n 
 left join regions r on n.region_id = r.region_id
 group by n.region_id, r.region_name
@@ -46,15 +47,15 @@ order by n.region_id;
 
 
 #### Answer:
-region_id | region_name | nodes
+region_id | region_name | unique_nodes | number_of_nodes
 -- | -- | -- 
-1 | Australia | 5
-2 | America | 5
-3 | Africa | 5
-4 | Asia | 5
-5 | Europe | 5
+1 | Australia | 5 | 770
+2 | America | 5 | 735
+3 | Africa | 5 | 714
+4 | Asia | 5 | 665
+5 | Europe | 5 | 616
 
-- Each region has 5 nodes.
+- Each region has 5 unique nodes.
 
 ***
 
