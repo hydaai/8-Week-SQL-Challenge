@@ -48,7 +48,7 @@ order by n.region_id;
 
 #### Answer:
 region_id | region_name | unique_nodes | number_of_nodes
--- | -- | -- 
+-- | -- | -- | -- 
 1 | Australia | 5 | 770
 2 | America | 5 | 735
 3 | Africa | 5 | 714
@@ -56,6 +56,11 @@ region_id | region_name | unique_nodes | number_of_nodes
 5 | Europe | 5 | 616
 
 - Each region has 5 unique nodes.
+- Australia has 770 nodes.
+- America has 735 nodes.
+- Africa has 714 nodes.
+- Asia has 665 nodes.
+- Europe has 616 nodes.
 
 ***
 
