@@ -262,8 +262,8 @@ customer_id | month_id | month_name | closing_balance
 5 | 3 | March | -1923
 5 | 4 | April | -2413
 
-- Customer 1's closing balance in January was $312 and in March $-640.
-- Customer 2's closing balance in January was $549 and in March $610.
+- Customer 1's closing balance in January was $312, in February it was unchanged and in March $-640.
+- Customer 2's closing balance in January was $549, in February it was unchanged and in March $610.
 
 ***
 
