@@ -12,7 +12,7 @@
   - GitHub
     - [A. Customer Nodes Exploration](https://github.com/hydaai/8-Week-SQL-Challenge/blob/83f5ea092b0e305cc61ec4843f0d9559d78c27b0/Case%20Study%20%234%20-%20Data%20Bank/A.%20Customer%20Nodes%20Exploration.md)
     - [B. Customer Transactions.md](https://github.com/hydaai/8-Week-SQL-Challenge/blob/74679d15086153e06f6a2246034119d5172e56bf/Case%20Study%20%234%20-%20Data%20Bank/B.%20Customer%20Transactions.md)
-  - [Medium]
+  - [Medium](https://medium.com/@ai.z.hida/8-week-sql-challenge-4-data-bank-ced02ed8e35f)
     
 ***
 
