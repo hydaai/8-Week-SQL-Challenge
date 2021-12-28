@@ -182,6 +182,39 @@ month_id | month_name | customer_count
 
 ````sql
 WITH 
+	first_month 
+		AS
+	(
+		SELECT 
+			customer_id,
+			CAST('20200131' as date) closing_date,
+			MIN(DATEPART(M, txn_date)) min_month, 
+			MAX(DATEPART(M, txn_date)) max_month
+		from customer_transactions
+		group by customer_id
+	),
+	months  --recursive function (for closing_date)
+		AS
+	(
+		SELECT 
+			customer_id,
+			closing_date,
+			DATEPART(M, closing_date) month_id,
+			DATENAME(M, closing_date) month_name
+			, min_month, max_month
+		FROM first_month
+
+			UNION ALL 
+    
+		SELECT 
+			customer_id,
+			DATEADD(M, 1, closing_date) closing_date,
+			DATEPART(M, DATEADD(M, 1, closing_date)) closing_id,
+			DATENAME(M, DATEADD(M, 1, closing_date)) closing_name
+			, min_month, max_month
+		FROM months b
+		WHERE closing_date <= CAST('20200401' as date)
+	),
 	balance --count data each type transactions
 AS
 	(
@@ -195,13 +228,15 @@ AS
 		group by customer_id, DATEPART(M, txn_date), DATENAME(M, txn_date)
 	)
 select
-	customer_id,
-	month_id,
-	month_name,
-	SUM(txn_amount) OVER(PARTITION BY customer_id ORDER BY month_id 
+	m.customer_id,
+	m.month_id,
+	m.month_name,
+	SUM(txn_amount) OVER(PARTITION BY m.customer_id ORDER BY m.month_id 
 						ROWS BETWEEN UNBOUNDED PRECEDING AND CURRENT ROW) closing_balance
-from balance
-ORDER BY customer_id, month_id;
+from months m
+left join balance b on b.customer_id = m.customer_id and b.month_id = m.month_id
+where m.month_id between min_month and max_month
+ORDER BY m.customer_id, m.month_id;
 ````
 
 
@@ -210,16 +245,20 @@ ORDER BY customer_id, month_id;
 customer_id | month_id | month_name | closing_balance
 -- | -- | -- | --
 1 | 1 | January | 312
+1 | 2 | February | 312
 1 | 3 | March | -640
 2 | 1 | January | 549
+2 | 2 | February | 549
 2 | 3 | March | 610
 3 | 1 | January | 144
 3 | 2 | February | -821
 3 | 3 | March | -1222
 3 | 4 | April | -729
 4 | 1 | January | 848
+4 | 2 | February | 848
 4 | 3 | March | 655
 5 | 1 | January | 954
+5 | 1 | February | 954
 5 | 3 | March | -1923
 5 | 4 | April | -2413
 
@@ -239,6 +278,39 @@ customer_id | month_id | month_name | closing_balance
 
 ````sql
 WITH 
+	first_month 
+		AS
+	(
+		SELECT 
+			customer_id,
+			CAST('20200131' as date) closing_date,
+			MIN(DATEPART(M, txn_date)) min_month, 
+			MAX(DATEPART(M, txn_date)) max_month
+		from customer_transactions
+		group by customer_id
+	),
+	months  --recursive function (for closing_date)
+		AS
+	(
+		SELECT 
+			customer_id,
+			closing_date,
+			DATEPART(M, closing_date) month_id,
+			DATENAME(M, closing_date) month_name
+			, min_month, max_month
+		FROM first_month
+
+			UNION ALL 
+    
+		SELECT 
+			customer_id,
+			DATEADD(M, 1, closing_date) closing_date,
+			DATEPART(M, DATEADD(M, 1, closing_date)) closing_id,
+			DATENAME(M, DATEADD(M, 1, closing_date)) closing_name
+			, min_month, max_month
+		FROM months b
+		WHERE closing_date <= CAST('20200401' as date)
+	),
 	balance --count data each type transactions
 AS
 	(
@@ -251,26 +323,38 @@ AS
 		from customer_transactions
 		group by customer_id, DATEPART(M, txn_date), DATENAME(M, txn_date)
 	),
-	balances --first and closing balances
+	closing_balances --first and closing balances
 AS
 	(
 		select
-			customer_id,
-			month_id,
-			month_name,
-			LAG(txn_amount) OVER(PARTITION BY customer_id ORDER BY month_id) opening_balance,
-			SUM(txn_amount) OVER(PARTITION BY customer_id ORDER BY month_id 
+			m.customer_id,
+			m.month_id,
+			m.month_name,
+			SUM(txn_amount) OVER(PARTITION BY m.customer_id ORDER BY m.month_id
 							ROWS BETWEEN UNBOUNDED PRECEDING AND CURRENT ROW) closing_balance
-		from balance
+		from months m
+		left join balance b on b.customer_id = m.customer_id and b.month_id = m.month_id
+		where m.month_id between min_month and max_month
 	),
-	cases --when balance null then 0
+	balances --first balances
 AS
 	(
 		select
 			customer_id,
 			month_id,
 			month_name,
-			coalesce(opening_balance,0) opening_balance,
+			coalesce(LAG(closing_balance) OVER(PARTITION BY customer_id ORDER BY month_id),0) opening_balance,
+			closing_balance
+		from closing_balances
+	),
+	cases --closing - opening balance
+AS
+	(
+		select
+			customer_id,
+			month_id,
+			month_name,
+			opening_balance,
 			closing_balance,
 			case when opening_balance is null then cast((closing_balance - 0) as float)
 				else cast((closing_balance - opening_balance) as float) end diff
@@ -302,9 +386,9 @@ where mins > 5;
 
 |percentage_of_customers|
 | -- |
-|4.24|
+|2.06|
 
-- 4.24% of customers increase their closing balance more than 5%.
+- 2.06% of customers increase their closing balance more than 5%.
 
 ***
 
