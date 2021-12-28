@@ -58,7 +58,7 @@ Danny launch his new startup Foodie-Fi in 2020 and started selling monthly and a
 Danny created Foodie-Fi with a data driven mindset and wanted to ensure all future investment decisions and new features were decided using data. 
 	**Using subscription style digital data to answer important business questions.**
 
-Check out the full case study [here](https://8weeksqlchallenge.com/case-study-3/) and my **solution** on [GitHub](https://github.com/hydaai/8-Week-SQL-Challenge/tree/main/Case%20Study%20%233%20-%20Foodie-Fi) or [Medium].
+Check out the full case study [here](https://8weeksqlchallenge.com/case-study-3/) and my **solution** on [GitHub](https://github.com/hydaai/8-Week-SQL-Challenge/tree/main/Case%20Study%20%233%20-%20Foodie-Fi) or [Medium](https://medium.com/@ai.z.hida/8-week-sql-challenge-3-foodie-fi-f6d3aec2761b).
 
 ***
 
@@ -74,7 +74,7 @@ Another initiative from Danny - Bank Data - some sort of intersection between Ne
 The management team at Data Bank want to increase their total customer base - but also need some help tracking just how much data storage their customers will need.
   **Calculating metrics, growth and analyse data to better forecast and plan for their future developments!**
 
-Check out the full case study [here](https://8weeksqlchallenge.com/case-study-4/) and my **solution** on [GitHub](https://github.com/hydaai/8-Week-SQL-Challenge/tree/main/Case%20Study%20%234%20-%20Data%20Bank) or [Medium].
+Check out the full case study [here](https://8weeksqlchallenge.com/case-study-4/) and my **solution** on [GitHub](https://github.com/hydaai/8-Week-SQL-Challenge/tree/main/Case%20Study%20%234%20-%20Data%20Bank) or [Medium](https://medium.com/@ai.z.hida/8-week-sql-challenge-4-data-bank-ced02ed8e35f).
 
 ***
 
