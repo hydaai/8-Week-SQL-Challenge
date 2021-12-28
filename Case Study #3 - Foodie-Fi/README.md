@@ -13,7 +13,7 @@
     - [A. Customer Journey](https://github.com/hydaai/8-Week-SQL-Challenge/blob/c45dfc8a626f0cf86361a59edfcb78cfa099cd4d/Case%20Study%20%233%20-%20Foodie-Fi/A.%20Customer%20Journey.md)
     - [B. Data Analysis Questions](https://github.com/hydaai/8-Week-SQL-Challenge/blob/c45dfc8a626f0cf86361a59edfcb78cfa099cd4d/Case%20Study%20%233%20-%20Foodie-Fi/B.%20Data%20Analysis%20Questions.md)
     - [C. Challenge Payment Question](https://github.com/hydaai/8-Week-SQL-Challenge/blob/c45dfc8a626f0cf86361a59edfcb78cfa099cd4d/Case%20Study%20%233%20-%20Foodie-Fi/C.%20Challenge%20Payment%20Question.md)
-  - [Medium]
+  - [Medium](https://medium.com/@ai.z.hida/8-week-sql-challenge-3-foodie-fi-f6d3aec2761b)
     
 ***
 
