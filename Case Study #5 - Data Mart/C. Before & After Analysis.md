@@ -19,9 +19,9 @@ View the complete syntax [*here*](https://github.com/hydaai/8-Week-SQL-Challenge
 - Compare these 2 periods before and after with previous years in 2018 and 2019.
 - Find out what is the growth or reduction rate in actual values and percentage of sales.
 
-## Answer
+#### Answer
 
-### *First, find the baseline week.*
+**First, find the baseline week.**
 
 ````sql
 select distinct
