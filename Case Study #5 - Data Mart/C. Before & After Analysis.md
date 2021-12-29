@@ -15,7 +15,8 @@ View the complete syntax [*here*](https://github.com/hydaai/8-Week-SQL-Challenge
 
 #### Steps:
 - Take week_date value 2020-06-15 as the baseline week.
-- Find out the total sales for 2018-2019 and before after baseline week for 4 and 12 weeks.
+- Find out the total sales before after baseline week for 4 and 12 weeks.
+- Compare these 2 periods before and after with previous years in 2018 and 2019.
 - Find out what is the growth or reduction rate in actual values and percentage of sales.
 
 ## Answer
