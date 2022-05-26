@@ -79,8 +79,8 @@ group by datepart(HOUR, order_time);
 
 -- 10. What was the volume of orders for each day of the week?
 select 
-	datename(DW, order_time) day_of_week,
+	datename(DW, DATEADD(day, 2, order_time)) day_of_week, --adjust first day of week as Monday by adding 2
 	count(order_id) total
 from #customer_orders
-group by datename(DW, order_time), datepart(DW, order_time)
-order by datepart(DW, order_time);
+group by datename(DW, DATEADD(day, 2, order_time)), datepart(DW, DATEADD(day, 2, order_time))
+order by datepart(DW, DATEADD(day, 2, order_time));
