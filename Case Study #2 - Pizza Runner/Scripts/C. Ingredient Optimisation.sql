@@ -219,7 +219,7 @@ FROM
 	)extras_orders
 )b
 left join #pizza_toppings t on b.topping_id = t.topping_id
-left join #runner_orders r on b.order_id = r.runner_id
+left join #runner_orders r on b.order_id = r.order_id
 where r.distance != 0
 						)c
 GROUP BY topping_id, topping_name
