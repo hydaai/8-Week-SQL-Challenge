@@ -4,8 +4,6 @@ This repository contains the solution for case studies in **[8WeekSQLChallenge](
 
 Thanks [DataWithDanny](https://github.com/DataWithDanny) for the excellent SQL case studies! 😊 
   
-  To complete this case study I used a SQL Server database.
-
 ## 🧾 Table of Contents
 - [Case Study #1 - Danny's Diner](#-case-study-1---dannys-diner)
 - [Case Study #2 - Pizza Runner](#-case-study-2---pizza-runner)
