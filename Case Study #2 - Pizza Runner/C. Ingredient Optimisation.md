@@ -323,7 +323,7 @@ FROM
 	)extras_orders
 )b
 left join #pizza_toppings t on b.topping_id = t.topping_id
-left join #runner_orders r on b.order_id = r.runner_id
+left join #runner_orders r on b.order_id = r.order_id
 where r.distance != 0
 						)c
 GROUP BY topping_id, topping_name
@@ -333,22 +333,22 @@ Order by counts desc, topping_id;
 #### Answer:
 topping_id | topping_name | counts
 -- | -- | --
-4 | Cheese | 9
-6 | Mushrooms | 9
-1 | Bacon | 8
+1 | Bacon | 12
+6 | Mushrooms | 11
+4 | Cheese | 10
+3 | Beef | 9
+5 | Chicken | 9
+8 | Pepperoni | 9
+10 | Salami | 9
 2 | BBQ Sauce | 8
-3 | Beef | 8
-5 | Chicken | 8
-8 | Pepperoni | 8
-10 | Salami | 8
-7 | Onions | 1
-9 | Peppers | 1
-11 | Tomatoes | 1
-12 | Tomato Sauce | 1
+7 | Onions | 3
+9 | Peppers | 3
+11 | Tomatoes | 3
+12 | Tomato Sauce | 3
   
-- Cheese and Mushrooms used 9 times.
-- Bacon, BBQ Sauce, Beef, Chicken, Pepperoni, Salami used 8 times.
-- Onions, Peppers, Tomatoes, Tomato Sauce used 1 time.
+- Bacon and Mushrooms used over 10 times.
+- Cheese, Beff, Chicken, Pepperoni, Salami and BBQ Sauce used over 5 times.
+- Onions, Peppers, Tomatoes and Tomato Sauce used less than 5 times.
 
 ***
 
