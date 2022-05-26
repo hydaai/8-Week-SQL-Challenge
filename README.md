@@ -100,4 +100,4 @@ Check out the full case study [here](https://8weeksqlchallenge.com/case-study-5/
 
 ***
 
-# <p align="center" style="margin-top: 0px;"> 😊 Thank you 😊
+# <p align="center" style="margin-top: 0px;"> 😊 [Thank you](#-8-week-sql-challenge-) 😊
