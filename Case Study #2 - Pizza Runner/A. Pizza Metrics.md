@@ -229,27 +229,30 @@ hour_of_day | total
 
 ### 10. *What was the volume of orders for each day of the week?*
 
+#### Steps:
+- Adjust first day of week as Monday by adding 2.
+
 ```sql
 select 
-	datename(DW, order_time) day_of_week,
+	datename(DW, DATEADD(day, 2, order_time)) day_of_week, 
 	count(order_id) total
 from #customer_orders
-group by datename(DW, order_time), datepart(DW, order_time)
-order by datepart(DW, order_time);
+group by datename(DW, DATEADD(day, 2, order_time)), datepart(DW, DATEADD(day, 2, order_time))
+order by datepart(DW, DATEADD(day, 2, order_time));
 ```
 
 #### Answer:
 day_of_week | total
 -- | --
-Wednesday | 5
-Thursday | 3
-Friday | 1
-Saturday | 5
+Friday | 5
+Saturday | 3
+Sunday | 1
+Monday | 5
   
-- On Wednesday, 5 pizzas ordered.
-- On Thursday, 3 pizzas ordered.
-- On Friday, 1 pizzas ordered.
-- On Saturday, 5 pizza ordered.
+- On Friday, 5 pizzas ordered.
+- On Saturday, 3 pizzas ordered.
+- On Sunday, 1 pizzas ordered.
+- On Monday, 5 pizza ordered.
 
 ***
 
