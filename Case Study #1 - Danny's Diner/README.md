@@ -9,7 +9,9 @@
 - [Available Data](#available-data)
 - [Case Study Questions](#case-study-questions)
 - Solution
-  - [GitHub](https://github.com/hydaai/8-Week-SQL-Challenge/blob/2245231af860087ae4833dba43da0af6481e36ae/Case%20Study%20%231%20-%20Danny's%20Diner/Solution.md)
+  - GitHub
+    - [SQL Server](https://github.com/hydaai/8-Week-SQL-Challenge/blob/afe9b90866371de963833236e8c2101e41dbf391/Case%20Study%20%231%20-%20Danny's%20Diner/Solution/SQL%20Server.md)
+    - [PostgreSQL](https://github.com/hydaai/8-Week-SQL-Challenge/blob/afe9b90866371de963833236e8c2101e41dbf391/Case%20Study%20%231%20-%20Danny's%20Diner/Solution/PostgreSQL.md)
   - [Medium](https://medium.com/@ai.z.hida/8-week-sql-challenge-1-dannys-diner-9a6e54e023ab)
     
 ***
