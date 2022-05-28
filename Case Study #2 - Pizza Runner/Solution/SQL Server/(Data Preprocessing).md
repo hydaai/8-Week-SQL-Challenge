@@ -3,7 +3,7 @@
 
 ## Solution
 
-View the complete syntax [*here*](https://github.com/hydaai/8-Week-SQL-Challenge/tree/main/Case%20Study%20%232%20-%20Pizza%20Runner/Scripts). 
+View the complete syntax [*here*](https://github.com/hydaai/8-Week-SQL-Challenge/tree/main/Case%20Study%20%232%20-%20Pizza%20Runner/Scripts/SQL%20Server). 
   
 ***
  
@@ -68,7 +68,9 @@ no | order_id | customer_id | pizza_id | exclusions | extras | order_time
 | exclusions | Use **STRING_SPLIT** to split the exclusions |
 |  | Use **TRIM** to remove spaces |
 |  | change datatype to **integer** |
-| extras | change datatype to **integer** |
+| extras | Use **STRING_SPLIT** to split the extras |
+|  | Use **TRIM** to remove spaces |
+|  | change datatype to **integer** |
 | order_time | no changes |
 
 Query SQL.
