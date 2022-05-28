@@ -71,7 +71,7 @@ no | order_id | customer_id | pizza_id | exclusions | extras | order_time
 | pizza_id | no changes |
 | exclusions | Use **REGEXP_SPLIT_TO_TABLE** to split the exclusions |
 |  | change datatype to **integer** |
-| extras | Use **REGEXP_SPLIT_TO_TABLE** to split the exclusions |
+| extras | Use **REGEXP_SPLIT_TO_TABLE** to split the extras |
 |  | change datatype to **integer** |
 | order_time | no changes |
 
