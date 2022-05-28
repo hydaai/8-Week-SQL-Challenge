@@ -1,7 +1,7 @@
 -- 1. How many pizzas were ordered?
 select 
 	count(*) pizza_ordered
-from customer_orders;
+from customer_orders_new;
 
 -- 2. How many unique customer orders were made?
 select 
