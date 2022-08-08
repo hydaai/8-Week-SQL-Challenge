@@ -3,7 +3,7 @@
 
 ## Solution
 
-View the complete syntax [*here*](https://github.com/hydaai/8-Week-SQL-Challenge/tree/main/Case%20Study%20%232%20-%20Pizza%20Runner/Scripts/PostgreSQL). 
+View the complete syntax [*here*](https://github.com/hydaai/8-Week-SQL-Challenge/tree/main/Case%20Study%20%232%20-%20Pizza%20Runner/Query/PostgreSQL). 
   
 ***
  
